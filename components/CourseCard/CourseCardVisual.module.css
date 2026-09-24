@@ -1,0 +1,122 @@
+.visualContainer {
+  position: relative;
+  width: 110px;
+  height: 82px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.glowBg {
+  position: absolute;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.12);
+  filter: blur(8px);
+  z-index: 1;
+}
+
+.glowPurple {
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.glowGreen {
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.glowAmber {
+  background: rgba(217, 119, 6, 0.12);
+}
+
+.glowCyan {
+  background: rgba(14, 165, 233, 0.12);
+}
+
+.glowYellow {
+  background: rgba(234, 179, 8, 0.12);
+}
+
+.laptopSvg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  filter: drop-shadow(0 4px 10px rgba(15, 23, 42, 0.1));
+}
+
+/* Tech Floating Tags */
+.techTag {
+  position: absolute;
+  z-index: 3;
+  font-size: 0.6rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  animation: floatTag 3s ease-in-out infinite alternate;
+}
+
+.tagPython {
+  top: 6px;
+  left: 14px;
+  background: #0284c7;
+  color: #ffffff;
+  padding: 1px 6px;
+}
+
+.tagJava {
+  top: 4px;
+  right: 10px;
+  background: #183985;
+  color: #ffffff;
+  padding: 1px 6px;
+  animation-delay: 1.2s;
+}
+
+.tagAi {
+  bottom: 18px;
+  right: 2px;
+  background: #4f46e5;
+  color: #ffffff;
+  padding: 1px 5px;
+  animation-delay: 2s;
+}
+
+.tagCode {
+  top: 10px;
+  right: 14px;
+  background: #0284c7;
+  color: #ffffff;
+  padding: 2px 6px;
+  font-family: monospace;
+}
+
+.tagDot {
+  width: 6px;
+  height: 6px;
+  background: #38bdf8;
+  border-radius: 50%;
+  bottom: 22px;
+  right: 6px;
+  box-shadow: 0 0 6px #38bdf8;
+}
+
+@keyframes floatTag {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+@media (max-width: 640px) {
+  .visualContainer {
+    width: 95px;
+    height: 72px;
+  }
+}

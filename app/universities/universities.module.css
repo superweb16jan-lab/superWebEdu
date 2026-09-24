@@ -1,0 +1,55 @@
+.pageHero {
+  padding: 40px 0 30px 0;
+  background: #f8fafc;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.heroTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #059669;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.heroTitle {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.gradient {
+  color: #183985;
+}
+
+.heroDesc {
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 680px;
+  margin: 12px auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  .pageHero {
+    padding: 32px 0 24px 0;
+  }
+  .heroTitle {
+    font-size: 1.9rem;
+  }
+  .heroDesc {
+    font-size: 0.94rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.6rem;
+  }
+}
+

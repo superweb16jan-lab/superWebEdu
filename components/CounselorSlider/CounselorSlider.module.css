@@ -1,0 +1,375 @@
+.section {
+  padding: 3.5rem 0;
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+}
+
+/* Header Row: Title on Left, Carousel Controls on Right */
+.headerRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.25rem;
+}
+
+.headerLeft {
+  max-width: 680px;
+}
+
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #183985;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.85rem, 2.6vw, 2.35rem);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.accentText {
+  color: #0e3f8c;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Top-Right Navigation Controls */
+.navControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  margin-bottom: 6px;
+}
+
+.navBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+/* Left Arrow: Outline Circle */
+.prevBtn {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #64748b;
+}
+
+.prevBtn:hover:not(.navBtnDisabled) {
+  border-color: #0e3f8c;
+  color: #0e3f8c;
+  background-color: #f8fafc;
+}
+
+/* Right Arrow: Solid Blue Circle (Matching Hero Blue #0e3f8c) */
+.nextBtn {
+  background-color: #0e3f8c;
+  border: 1px solid #0e3f8c;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(14, 63, 140, 0.28);
+}
+
+.nextBtn:hover:not(.navBtnDisabled) {
+  background-color: #0a2d64;
+  border-color: #0a2d64;
+  box-shadow: 0 6px 16px rgba(14, 63, 140, 0.38);
+  transform: translateY(-1px);
+}
+
+.navBtnDisabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Slider Wrapper and Navigation */
+.sliderWrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  user-select: none;
+}
+
+.sliderWindow {
+  overflow: hidden;
+  width: 100%;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slideItem {
+  flex-shrink: 0;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Compact Counselor Card */
+.counselorCard {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.counselorCard:hover {
+  transform: translateY(-3px);
+  border-color: #183985;
+  box-shadow: 0 8px 18px rgba(24, 57, 133, 0.12);
+}
+
+/* Image Wrapper */
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 270px;
+  background-color: #e2e8f0;
+  overflow: hidden !important;
+  border-radius: 12px !important;
+}
+
+.counselorImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.counselorCard:hover .counselorImg {
+  transform: scale(1.04);
+}
+
+/* Bottom Overlay on Image: Name, Experience and Reach Now Button with Frosted Blur Effect */
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(16, 38, 92, 0.7) 0%, rgba(10, 24, 62, 0.88) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 0.75rem 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  border-bottom-left-radius: 11px !important;
+  border-bottom-right-radius: 11px !important;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.counselorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.counselorName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.counselorExp {
+  font-size: 0.76rem;
+  color: #93c5fd;
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Reach Now Button directly on the image */
+.reachNowBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #183985;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 6px !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.reachNowBtn:hover {
+  background-color: #e31e24;
+  border-color: #e31e24;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(227, 30, 36, 0.35);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section {
+    padding: 2.75rem 0;
+  }
+
+  .headerRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .navControls {
+    align-self: flex-end;
+  }
+
+  .slideItem {
+    padding: 0 6px;
+  }
+
+  .imageWrapper {
+    height: 230px;
+  }
+}
+
+@media (max-width: 540px) {
+  .section {
+    padding: 2.25rem 0;
+  }
+
+  .headerRow {
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .tagline {
+    font-size: 0.72rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .title {
+    font-size: 1.45rem;
+  }
+
+  .subtitle {
+    font-size: 0.86rem;
+  }
+
+  .slideItem {
+    padding: 0 4px;
+  }
+
+  .counselorCard {
+    border-radius: 10px !important;
+  }
+
+  .imageWrapper {
+    height: 195px;
+    border-radius: 10px !important;
+  }
+
+  .imageOverlay {
+    padding: 0.45rem 0.5rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    border-bottom-left-radius: 9px !important;
+    border-bottom-right-radius: 9px !important;
+  }
+
+  .counselorName {
+    font-size: 0.82rem;
+  }
+
+  .counselorExp {
+    font-size: 0.65rem;
+  }
+
+  .reachNowBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.3rem 0.4rem;
+    font-size: 0.7rem;
+    gap: 3px;
+    border-radius: 4px !important;
+  }
+
+  .navControls {
+    gap: 8px;
+    margin-bottom: 0;
+  }
+
+  .navBtn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.mobileDots {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobileDots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .mobileDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50% !important;
+    background: #cbd5e1;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease;
+  }
+
+  .mobileDotActive {
+    background: #2563eb;
+    transform: scale(1.3);
+  }
+}

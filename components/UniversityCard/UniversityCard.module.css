@@ -1,0 +1,203 @@
+.card {
+  background: var(--white-porcelain, #fcfdfe);
+  border: 1px solid var(--border-light, #e1e8f2);
+  border-radius: var(--radius-xl);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03);
+}
+
+.card:hover {
+  border-color: #93c5fd;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.logoBadge {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: #183985;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.accreditationTag {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #047857;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.uniName {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748b;
+  font-size: 0.84rem;
+  margin-top: 6px;
+  margin-bottom: 14px;
+}
+
+.approvalsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.approvalPill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #183985;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: #334155;
+}
+
+.featureItem svg {
+  color: #059669;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.coursesBox {
+  background: var(--white-ghost, #eff4f9);
+  border: 1px solid var(--border-subtle, #eef2f7);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.coursesLabel {
+  font-size: 0.74rem;
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.coursesWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.courseTag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  background: var(--white-pure, #ffffff);
+  border: 1px solid var(--border-medium, #cbd6e2);
+  color: #1e293b;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.btnDetails {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #183985;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.btnDetails:hover {
+  background: #183985;
+  color: #ffffff;
+  border-color: #183985;
+}
+
+.btnWhatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #25d366;
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
+}
+
+.btnWhatsapp:hover {
+  background: #16a34a;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 18px 16px;
+  }
+  .uniName {
+    font-size: 1.2rem;
+  }
+  .actions {
+    flex-direction: column;
+  }
+  .btnDetails,
+  .btnWhatsapp {
+    width: 100%;
+  }
+}
+

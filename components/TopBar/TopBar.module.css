@@ -1,0 +1,130 @@
+.topBar {
+  background: var(--white-pure, #ffffff);
+  border-bottom: 1px solid var(--border-light, #e1e8f2);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  padding: 6px 0;
+  position: relative;
+  z-index: 40;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 5.5%;
+  margin: 0 auto;
+}
+
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.74rem;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #059669;
+}
+
+.hours {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748b;
+  font-size: 0.76rem;
+}
+
+.rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.78rem;
+  transition: color var(--transition-fast);
+}
+
+.contactLink:hover {
+  color: #e31e24;
+}
+
+.whatsappPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #25d366;
+  color: #ffffff;
+  border: 1px solid #16a34a;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.76rem;
+  transition: background var(--transition-fast);
+}
+
+.whatsappPill:hover {
+  background: #16a34a;
+}
+
+.mobileWhatsappText {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .badge,
+  .hours {
+    display: none !important;
+  }
+  .leftGroup {
+    display: none;
+  }
+  .inner {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .rightGroup {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktopWhatsappText {
+    display: none;
+  }
+  .mobileWhatsappText {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .topBar {
+    padding: 4px 0;
+  }
+}

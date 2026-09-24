@@ -1,0 +1,98 @@
+.strip {
+  padding: 32px 0;
+  background: #0b1e36;
+  border-bottom: 1px solid #1e293b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconWrap {
+  color: #60a5fa;
+  flex-shrink: 0;
+}
+
+.statText {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNumber {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Quote Box */
+.quoteBox {
+  background: #132a48;
+  border: 1px solid #1e3a5f;
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.quoteText {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: #e2e8f0;
+  line-height: 1.45;
+}
+
+.quoteAuthor {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #60a5fa;
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statsRow {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .strip {
+    padding: 24px 0;
+  }
+  .statsRow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}

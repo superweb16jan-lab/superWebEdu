@@ -1,0 +1,239 @@
+.section {
+  padding: 48px 0 52px 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #047857;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.checkIcon {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.sectionTitle {
+  font-size: clamp(1.75rem, 2.6vw, 2.35rem);
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.025em;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.blueHighlight {
+  color: #102957; /* SuperWeb Navy */
+}
+
+.viewAllLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #102957;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.viewAllLink:hover {
+  color: #e62b32;
+  transform: translateX(3px);
+}
+
+.subtitle {
+  font-size: 0.96rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 680px;
+}
+
+/* ========================================================
+   INFINITE AUTO SLIDER (MARQUEE)
+   ======================================================== */
+.marqueeOuter {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 0;
+  mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+}
+
+.marqueeOuter::before,
+.marqueeOuter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.marqueeOuter::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.marqueeOuter::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  width: max-content;
+  animation: scrollMarquee 36s linear infinite;
+  will-change: transform;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ========================================================
+   UNIVERSITY LOGO CARD (MATCHING REFERENCE FORMAT)
+   ======================================================== */
+.uniCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 186px;
+  height: 76px;
+  background: #ffffff;
+  border: 1px solid #71717a; /* Clean, crisp rounded outline matching reference */
+  border-radius: 14px !important;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.uniCard:hover {
+  transform: translateY(-2px);
+  border-color: #102957;
+  box-shadow: 0 6px 16px rgba(16, 41, 87, 0.15);
+}
+
+.logoWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImg {
+  max-width: 136px;
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.uniCard:hover .logoImg {
+  transform: scale(1.04);
+}
+
+/* ========================================================
+   RESPONSIVE STYLES
+   ======================================================== */
+@media (max-width: 768px) {
+  .section {
+    padding: 32px 0 36px 0;
+  }
+
+  .header {
+    margin-bottom: 18px;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+    margin-bottom: 6px;
+  }
+
+  .titleRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .sectionTitle {
+    font-size: 1.45rem;
+  }
+
+  .viewAllLink {
+    font-size: 0.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .marqueeTrack {
+    gap: 16px;
+    animation-duration: 26s;
+  }
+
+  .uniCard {
+    width: 142px;
+    height: 62px;
+    padding: 8px 14px;
+    border-radius: 12px !important;
+  }
+
+  .logoImg {
+    max-width: 108px;
+    max-height: 40px;
+  }
+
+  .marqueeOuter::before,
+  .marqueeOuter::after {
+    width: 25px;
+  }
+}

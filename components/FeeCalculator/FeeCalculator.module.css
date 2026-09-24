@@ -1,0 +1,248 @@
+.section {
+  padding: 60px 0;
+  background: #f5f3ff;
+  border-bottom: 1px solid #ddd6fe;
+  position: relative;
+}
+
+.calculatorCard {
+  background: #ffffff;
+  border: 1px solid #ddd6fe;
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.05);
+}
+
+.header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 30px auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #b45309;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-top: 6px;
+}
+
+.calculatorGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.formArea {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.select,
+.rangeInput {
+  background: var(--white-pure, #ffffff);
+  border: 1px solid var(--border-medium, #cbd6e2);
+  border-radius: var(--radius-md);
+  padding: 11px 14px;
+  color: #0f172a;
+  font-size: 0.92rem;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.select:focus {
+  outline: none;
+  border-color: #183985;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+}
+
+.select option {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* Result Box */
+.resultBox {
+  background: var(--white-pure, #ffffff);
+  border: 1px solid var(--border-light, #e1e8f2);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+}
+
+.resultBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #183985;
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recLabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.matchTag {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.recCourseName {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.feeEstimatesRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  background: var(--white-ghost, #eff4f9);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle, #eef2f7);
+}
+
+.feeItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.feeTitle {
+  font-size: 0.72rem;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.feeValue {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #059669;
+  margin-top: 2px;
+}
+
+.emiBox {
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emiText {
+  font-size: 0.82rem;
+  color: #92400e;
+  font-weight: 700;
+}
+
+.emiAmount {
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: #b45309;
+}
+
+.calcWhatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #25d366;
+  color: #ffffff;
+  padding: 11px 18px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.94rem;
+  transition: all var(--transition-smooth);
+}
+
+.calcWhatsappBtn:hover {
+  background: #16a34a;
+}
+
+@media (max-width: 860px) {
+  .calculatorGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .calculatorCard {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 36px 0;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .calculatorCard {
+    padding: 18px 14px;
+  }
+  .resultBox {
+    padding: 18px 14px;
+  }
+  .feeEstimatesRow {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
