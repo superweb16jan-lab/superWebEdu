@@ -99,10 +99,10 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: #e62b32;
   background: #ffffff;
   border: 1px solid #fed7d7;
@@ -136,9 +136,9 @@
 }
 
 .heroDesc {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #475569;
-  line-height: 1.55;
+  line-height: 1.6;
   margin: 0 0 24px 0;
   max-width: 530px;
 }
@@ -172,7 +172,7 @@
   background: #e62b32;
   color: #ffffff;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1rem;
   padding: 12px 24px;
   border-radius: 6px !important;
   display: inline-flex;
@@ -195,7 +195,7 @@
   background: #ffffff;
   color: #102957;
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 1rem;
   padding: 11px 18px;
   border-radius: 6px !important;
   border: 1px solid #cbd5e1;
@@ -218,7 +218,7 @@
   align-items: center;
   gap: 8px;
   color: #102957;
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -1607,7 +1607,7 @@
   }
 
   .heroEyebrow {
-    font-size: 0.7rem;
+    font-size: 0.875rem;
     margin-bottom: 6px;
     letter-spacing: 0.06em;
     padding: 3px 8px;
@@ -1621,7 +1621,7 @@
   }
 
   .heroDesc {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     line-height: 1.35;
     margin-bottom: 12px;
     max-width: 100%;
@@ -1638,7 +1638,7 @@
 
   .heroBtnApply {
     padding: 9px 15px;
-    font-size: 0.82rem;
+    font-size: 0.875rem;
     width: fit-content;
     gap: 5px;
     border-radius: 6px !important;
@@ -1646,7 +1646,7 @@
 
   .heroBtnSyllabus {
     padding: 8px 12px;
-    font-size: 0.78rem;
+    font-size: 0.875rem;
     width: fit-content;
     gap: 4px;
   }
@@ -1924,7 +1924,7 @@
   }
 
   .mobileFeeLabel {
-    font-size: 0.68rem;
+    font-size: 0.875rem;
     color: #64748b;
     text-transform: uppercase;
     font-weight: 600;
@@ -1943,7 +1943,7 @@
     border: none;
     text-decoration: none;
     padding: 10px 10px;
-    font-size: 0.82rem;
+    font-size: 0.875rem;
     font-weight: 700;
     display: inline-flex;
     align-items: center;
@@ -1958,7 +1958,7 @@
     color: #ffffff;
     border: none;
     padding: 10px 10px;
-    font-size: 0.84rem;
+    font-size: 0.875rem;
     font-weight: 700;
     display: inline-flex;
     align-items: center;
@@ -1991,7 +1991,7 @@
   }
 
   .heroEyebrow {
-    font-size: 0.65rem;
+    font-size: 0.875rem;
     padding: 2px 7px;
     margin-bottom: 5px;
   }
@@ -2003,7 +2003,7 @@
   }
 
   .heroDesc {
-    font-size: 0.72rem;
+    font-size: 0.875rem;
     line-height: 1.25;
     margin-bottom: 8px;
   }
@@ -2017,13 +2017,13 @@
 
   .heroBtnApply {
     padding: 7px 11px;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     gap: 4px;
   }
 
   .heroBtnSyllabus {
     padding: 6px 9px;
-    font-size: 0.72rem;
+    font-size: 0.875rem;
     gap: 3px;
   }
 
@@ -2052,7 +2052,7 @@
   }
 
   .featureText {
-    font-size: 0.66rem;
+    font-size: 0.875rem;
   }
 
   .featureIcon {

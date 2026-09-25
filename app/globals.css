@@ -99,7 +99,18 @@
   border-radius: 0 !important;
 }
 
+/* ========================================================
+   UNIVERSAL ACCESSIBILITY & MINIMUM FONT SIZE ENFORCEMENT
+   Desktop Viewport (>= 769px): Absolute Minimum 16px
+   Mobile Viewport (<= 768px):  Absolute Minimum 14px
+   ======================================================== */
+:root {
+  --font-min-desktop: 16px;
+  --font-min-mobile: 14px;
+}
+
 html {
+  font-size: 16px;
   max-width: 100%;
   scroll-behavior: smooth;
   color-scheme: light;
@@ -109,6 +120,14 @@ html {
 body {
   max-width: 100%;
   overflow-x: clip;
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.011em;
 }
 
 html.nav-menu-open,
@@ -120,14 +139,55 @@ body.modal-open {
   touch-action: none;
 }
 
-body {
-  font-family: var(--font-sans);
-  background-color: var(--bg-main);
-  color: var(--text-primary);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.011em;
+/* Base minimum enforcement for desktop */
+@media (min-width: 769px) {
+  p,
+  li,
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  label,
+  small,
+  td,
+  th {
+    font-size: max(16px, 1rem);
+  }
+
+  span {
+    font-size: inherit;
+  }
+}
+
+/* Base minimum enforcement for mobile */
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  p,
+  li,
+  a,
+  button,
+  label,
+  small,
+  td,
+  th {
+    font-size: max(14px, 0.875rem);
+  }
+
+  span {
+    font-size: inherit;
+  }
+
+  /* Keep form inputs at 16px on iOS to avoid auto-zoom */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
 }
 
 h1,
