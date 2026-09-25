@@ -166,11 +166,13 @@
   align-items: center;
   gap: 6px;
   cursor: pointer;
+  text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .btnKnowMore:hover {
   color: #1d4ed8;
+  text-decoration: none;
 }
 
 .arrowIcon {
@@ -180,6 +182,26 @@
 .btnKnowMore:hover .arrowIcon {
   transform: translateX(4px);
 }
+
+.imageLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+.titleLink {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.titleLink:hover {
+  color: #2563eb;
+  text-decoration: none;
+}
+
 
 /* List Layout (for course explorer if used) */
 .listCard {

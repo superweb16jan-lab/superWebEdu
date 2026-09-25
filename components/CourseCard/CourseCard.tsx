@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Clock, GraduationCap, ArrowRight } from "lucide-react";
 import styles from "./CourseCard.module.css";
 import { Course } from "@/data/courses";
 
 interface CourseCardProps {
   course: Course;
-  onViewDetails: (course: Course) => void;
+  onViewDetails?: (course: Course) => void;
   onEnquire?: (courseName: string) => void;
   layoutMode?: "grid" | "list";
 }
@@ -46,13 +47,19 @@ export default function CourseCard({
     <div className={`${styles.card} ${layoutMode === "list" ? styles.listCard : ""}`}>
       {/* Course Image Header */}
       <div className={styles.imageWrapper}>
-        <Image
-          src={course.image}
-          alt={course.name}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          className={styles.courseImage}
-        />
+        <Link 
+          href={`/courses/${course.id}`} 
+          className={styles.imageLink}
+          aria-label={`View ${course.name} details`}
+        >
+          <Image
+            src={course.image}
+            alt={course.name}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            className={styles.courseImage}
+          />
+        </Link>
         
         {/* Category Pill Tag overlapping bottom-left */}
         <span className={`${styles.categoryBadge} ${getCategoryClass(course.category)}`}>
@@ -63,7 +70,12 @@ export default function CourseCard({
       <div className={styles.cardMain}>
         {/* Course Title */}
         <h3 className={styles.courseTitle} title={course.name}>
-          {course.name}
+          <Link 
+            href={`/courses/${course.id}`}
+            className={styles.titleLink}
+          >
+            {course.name}
+          </Link>
         </h3>
 
         {/* Metadata Row: Duration & Semesters */}
@@ -83,23 +95,22 @@ export default function CourseCard({
           )}
         </div>
 
-        {/* Program Accreditations & Mode (Pricing moved to detail modal) */}
+        {/* Program Accreditations & Mode */}
         <div className={styles.badgeRow}>
           <span className={styles.featureBadge}>UGC-DEB Approved</span>
           <span className={styles.featureBadge}>{course.mode}</span>
         </div>
 
-        {/* Know More Action Link */}
+        {/* Know More Action Link -> Dedicated Course Page */}
         <div className={styles.actions}>
-          <button
-            onClick={() => onViewDetails(course)}
+          <Link
+            href={`/courses/${course.id}`}
             className={styles.btnKnowMore}
-            type="button"
             aria-label={`Know more about ${course.name}`}
           >
             <span>Know More</span>
             <ArrowRight size={16} className={styles.arrowIcon} />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

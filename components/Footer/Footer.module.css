@@ -1,168 +1,437 @@
+/* ==========================================================================
+   Footer Component Styles - superWebEdu
+   Matching user reference image with rich navy palette, organic wave vector,
+   trust badges, red title accents, contact stack, and counselor CTA button.
+   ========================================================================== */
+
 .footer {
-  background: #12184b;
-  border-top: 1px solid #1e2574;
-  padding: 70px 0 30px 0;
-  color: #cbd5e1;
-  font-size: 0.92rem;
+  background: linear-gradient(180deg, #09193f 0%, #06122d 100%);
+  color: #94a3b8;
+  font-size: 0.9rem;
   position: relative;
+  overflow: hidden;
+  padding: 68px 0 0 0;
+  width: 100%;
 }
 
+/* Organic Background Vector Wave */
+.bgVectorWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bgVectorSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Main 4-Column Grid */
 .grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.45fr 1fr 1fr 1.35fr;
   gap: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
+  position: relative;
+  z-index: 2;
+  align-items: flex-start;
 }
 
+/* ========================================================
+   Column 1: Brand & Trust Badges
+   ======================================================== */
 .brandCol {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 360px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.logoLink {
+  display: inline-block;
   text-decoration: none;
+  line-height: 0;
 }
 
 .footerLogoImg {
   height: 40px;
   width: auto;
-  max-width: 220px;
+  max-width: 215px;
   object-fit: contain;
   display: block;
 }
 
 .brandDesc {
   color: #94a3b8;
-  line-height: 1.6;
   font-size: 0.88rem;
+  line-height: 1.62;
+  margin: 0;
 }
 
+/* Trust Badges */
 .trustBadges {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
+  gap: 10px;
+  margin-top: 2px;
+  margin-bottom: 6px;
 }
 
 .trustPill {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: #34d399;
-  background: rgba(5, 150, 105, 0.15);
-  border: 1px solid #059669;
-  padding: 3px 10px;
-  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  background: rgba(14, 34, 69, 0.7);
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  border-radius: 9999px !important;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.trustIconGreen {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+/* Social Media Circular Buttons */
+.socialRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.socialBtn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50% !important;
+  background: #142852;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.socialBtn:hover {
+  background: #1e3a75;
+  color: #ffffff;
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================================
+   Columns 2 & 3: Headers & Link Lists
+   ======================================================== */
+.linksCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.colHeader {
+  margin-bottom: 4px;
 }
 
 .colTitle {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 18px;
-  position: relative;
-  padding-bottom: 8px;
+  margin: 0;
+  letter-spacing: -0.01em;
 }
 
-.colTitle::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 30px;
-  height: 2.5px;
-  background: #e31e24;
-  border-radius: var(--radius-full);
+.titleRedBar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #e62b32;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-radius: 2px !important;
 }
 
 .linkList {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.linkItem a {
-  color: #cbd5e1;
-  font-size: 0.88rem;
-  transition: color var(--transition-fast);
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.linkItem a:hover {
-  color: #60a5fa;
-  transform: translateX(4px);
-}
-
-.contactList {
-  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.contactRow {
+.linkItem a {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  line-height: 1.4;
+}
+
+.linkChevron {
+  color: #64748b;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.linkItem a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.linkItem a:hover .linkChevron {
+  color: #e62b32;
+}
+
+.viewAllCourses {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #3b82f6;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 18px;
+  transition: all 0.15s ease;
+}
+
+.viewAllCourses:hover {
+  color: #60a5fa;
+  transform: translateX(4px);
+}
+
+/* ========================================================
+   Column 4: Need Help?
+   ======================================================== */
+.helpCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactItem {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  font-size: 0.88rem;
-  color: #cbd5e1;
+  gap: 12px;
 }
 
-.contactRow svg {
-  color: #60a5fa;
+.contactIconCircle {
   flex-shrink: 0;
   margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contactRow a {
+.iconBlue {
+  color: #38bdf8;
+}
+
+.iconGreen {
+  color: #25d366;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contactTitle {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  line-height: 1.3;
+}
+
+.contactTitle:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.contactTitleGreen {
+  color: #25d366;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  line-height: 1.3;
+}
+
+.contactTitleGreen:hover {
+  color: #4ade80;
+  text-decoration: underline;
+}
+
+.contactHoursTitle {
   color: #ffffff;
   font-weight: 600;
-  transition: color var(--transition-fast);
+  font-size: 0.88rem;
+  line-height: 1.3;
 }
 
-.contactRow a:hover {
-  color: #34d399;
+.contactSubtitle {
+  color: #94a3b8;
+  font-size: 0.78rem;
+  line-height: 1.35;
 }
 
-/* Bottom Bar */
+/* Red Counselor Action Button */
+.counselorBtn {
+  background: #e62b32;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px !important;
+  padding: 13px 20px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 22px;
+  box-shadow: 0 4px 16px rgba(230, 43, 50, 0.4);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.counselorBtn:hover {
+  background: #c81e25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 43, 50, 0.5);
+}
+
+.btnIconLeft {
+  flex-shrink: 0;
+}
+
+.btnIconRight {
+  flex-shrink: 0;
+  margin-left: 2px;
+  transition: transform 0.2s ease;
+}
+
+.counselorBtn:hover .btnIconRight {
+  transform: translateX(3px);
+}
+
+/* ========================================================
+   Bottom Bar (Copyright & Legal Links)
+   ======================================================== */
 .bottomBar {
-  border-top: 1px solid #1e293b;
-  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 24px 0 28px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px;
+  font-size: 0.84rem;
+  position: relative;
+  z-index: 2;
+}
+
+.copyrightText {
+  color: #94a3b8;
+  margin: 0;
+  font-size: 0.84rem;
+}
+
+.bottomNav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bottomLink {
+  color: #94a3b8;
+  font-size: 0.84rem;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.bottomLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.bottomDivider {
+  color: #334155;
   font-size: 0.82rem;
-  color: #64748b;
+  user-select: none;
 }
 
-.disclaimerText {
-  font-size: 0.76rem;
-  color: #64748b;
-  line-height: 1.5;
-  margin-top: 8px;
-}
-
-@media (max-width: 992px) {
+/* ========================================================
+   Responsive Breakpoints
+   ======================================================== */
+@media (max-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .brandCol {
+    max-width: 100%;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 640px) {
+  .footer {
+    padding-top: 48px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 34px;
+    margin-bottom: 36px;
   }
+
+  .trustBadges {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .counselorBtn {
+    padding: 12px 16px;
+    font-size: 0.88rem;
+  }
+
   .bottomBar {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 32px;
+  }
+
+  .bottomNav {
+    flex-wrap: wrap;
+    gap: 8px;
   }
 }

@@ -40,7 +40,7 @@ export const UNIVERSITY_PARTNERS = [
     name: "Amity University Online",
     tag: "Ranked #1 Online Programs",
     badge: "NAAC A+",
-    logo: "/images/universities/amity.svg",
+    logo: "/images/universities/amity.webp",
     alt: "Amity University Online Logo"
   },
   {
@@ -72,7 +72,7 @@ export const UNIVERSITY_PARTNERS = [
     name: "Suresh Gyan Vihar University",
     tag: "NAAC 'A+' Grade DDE",
     badge: "AICTE",
-    logo: "/images/universities/sgvu.png",
+    logo: "/images/universities/sgvu.svg",
     alt: "SGVU Official Logo"
   },
   {
@@ -80,7 +80,7 @@ export const UNIVERSITY_PARTNERS = [
     name: "Chandigarh University",
     tag: "NAAC A+ Accredited",
     badge: "QS Ranked",
-    logo: "/images/universities/chandigarh.png",
+    logo: "/images/universities/chandigarh.webp",
     alt: "Chandigarh University Official Logo"
   },
   {
@@ -142,6 +142,7 @@ export default function UniversityLogos({ onSelectUniversity }: UniversityLogosP
                     height={64}
                     className={styles.logoImg}
                     loading={idx < 10 ? "eager" : "lazy"}
+                    unoptimized={true}
                   />
                 </div>
               </Link>

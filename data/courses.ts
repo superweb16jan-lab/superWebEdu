@@ -557,3 +557,26 @@ export const DEGREE_LEVELS = [
   "Postgraduate (PG)",
   "Diploma & Cert"
 ] as const;
+
+export function getCourseById(id: string): Course | undefined {
+  if (!id) return undefined;
+  const cleanId = id.trim().toLowerCase();
+  return COURSES.find(
+    (c) => c.id.toLowerCase() === cleanId || c.shortName.toLowerCase() === cleanId
+  );
+}
+
+export function getRelatedCourses(currentId: string, limit: number = 3): Course[] {
+  const current = getCourseById(currentId);
+  if (!current) return COURSES.slice(0, limit);
+
+  const sameCategory = COURSES.filter(
+    (c) => c.id !== current.id && c.category === current.category
+  );
+  const otherCourses = COURSES.filter(
+    (c) => c.id !== current.id && c.category !== current.category
+  );
+
+  return [...sameCategory, ...otherCourses].slice(0, limit);
+}
+

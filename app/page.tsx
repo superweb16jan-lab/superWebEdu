@@ -9,7 +9,6 @@ import WorkingProfessionals from "@/components/WorkingProfessionals/WorkingProfe
 import StudyProcess from "@/components/StudyProcess/StudyProcess";
 import BottomStatsQuote from "@/components/BottomStatsQuote/BottomStatsQuote";
 import PopularCourses from "@/components/PopularCourses/PopularCourses";
-import FeeCalculator from "@/components/FeeCalculator/FeeCalculator";
 import DegreeValidity from "@/components/DegreeValidity/DegreeValidity";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import Testimonials from "@/components/Testimonials/Testimonials";
@@ -71,10 +70,7 @@ export default function HomePage() {
       {/* 9. Top UGC & NAAC Approved Universities Row */}
       <UniversityLogos onSelectUniversity={(uni) => handleOpenLeadModal(undefined, uni)} />
 
-      {/* 10. Interactive Course Fee & Semester Breakdown Calculator */}
-      <FeeCalculator />
-
-      {/* 12. UGC Gazette Degree Validity Equivalence */}
+      {/* 10. UGC Gazette Degree Validity Equivalence */}
       <DegreeValidity />
 
       {/* 13. Why Choose SuperWebSiksha Advantages */}
