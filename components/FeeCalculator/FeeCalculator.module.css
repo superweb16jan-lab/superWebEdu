@@ -87,7 +87,7 @@
 
 .select:focus {
   outline: none;
-  border-color: #183985;
+  border-color: #102957;
   box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
 }
 
@@ -117,7 +117,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: #183985;
+  background: #102957;
 }
 
 .resultHeader {

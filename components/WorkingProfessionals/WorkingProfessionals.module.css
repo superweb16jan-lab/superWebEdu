@@ -15,7 +15,7 @@
 .tagline {
   display: inline-block;
   background: transparent;
-  color: #183985;
+  color: #102957;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -36,7 +36,7 @@
 }
 
 .gradient {
-  color: #e31e24;
+  color: #c52227;
 }
 
 .subtitle {
@@ -71,7 +71,7 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background: #183985;
+  background: #102957;
   opacity: 0;
   transition: opacity 0.25s ease;
 }
@@ -96,12 +96,12 @@
 .statValue {
   font-size: 1.85rem;
   font-weight: 800;
-  color: #183985;
+  color: #102957;
   letter-spacing: -0.02em;
 }
 
 .statIcon {
-  color: #e31e24;
+  color: #c52227;
 }
 
 .statTitle {
@@ -175,7 +175,7 @@
   height: 52px;
   border-radius: 12px;
   background: #f1f5f9;
-  color: #183985;
+  color: #102957;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,7 +183,7 @@
 }
 
 .advCard:hover .advIconWrap {
-  background: #183985;
+  background: #102957;
   color: #ffffff;
 }
 
@@ -191,7 +191,7 @@
   font-size: 0.75rem;
   font-weight: 700;
   background: #eff6ff;
-  color: #183985;
+  color: #102957;
   padding: 4px 10px;
   border-radius: 999px;
   border: 1px solid #dbeafe;
@@ -233,7 +233,7 @@
   font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #e31e24;
+  color: #c52227;
   letter-spacing: 0.6px;
   margin-bottom: 8px;
 }
@@ -401,9 +401,9 @@
 }
 
 .personaTabActive {
-  background: #183985;
+  background: #102957;
   color: #ffffff;
-  border-color: #183985;
+  border-color: #102957;
   box-shadow: 0 4px 14px rgba(29, 78, 216, 0.25);
 }
 
@@ -420,8 +420,8 @@
   position: absolute;
   top: 24px;
   right: 28px;
-  background: rgba(227, 30, 36, 0.1);
-  color: #e31e24;
+  background: rgba(197, 34, 39, 0.1);
+  color: #c52227;
   font-size: 0.8rem;
   font-weight: 700;
   padding: 5px 14px;
@@ -439,7 +439,7 @@
 
 .personaTagLine {
   font-size: 0.95rem;
-  color: #183985;
+  color: #102957;
   margin-bottom: 24px;
 }
 
@@ -506,7 +506,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #183985;
+  background: #102957;
   color: #ffffff;
   font-weight: 700;
   font-size: 0.92rem;
@@ -518,9 +518,9 @@
 }
 
 .personaBtnApply:hover {
-  background: #e31e24;
+  background: #c52227;
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(227, 30, 36, 0.3);
+  box-shadow: 0 4px 14px rgba(197, 34, 39, 0.3);
 }
 
 .personaBtnWhatsApp {
@@ -600,7 +600,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: #e31e24;
+  background: #c52227;
   color: #ffffff;
   font-weight: 700;
   font-size: 0.95rem;
@@ -613,9 +613,9 @@
 }
 
 .btnCtaPrimary:hover {
-  background: #c8161b;
+  background: #a61a20;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(227, 30, 36, 0.4);
+  box-shadow: 0 6px 18px rgba(197, 34, 39, 0.35);
 }
 
 .btnCtaWhatsApp {

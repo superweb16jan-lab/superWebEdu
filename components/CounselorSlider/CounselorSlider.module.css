@@ -25,7 +25,7 @@
   gap: 0.5rem;
   background: none;
   border: none;
-  color: #183985;
+  color: #102957;
   font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -44,7 +44,7 @@
 }
 
 .accentText {
-  color: #0e3f8c;
+  color: #102957;
 }
 
 .subtitle {
@@ -82,15 +82,15 @@
 }
 
 .prevBtn:hover:not(.navBtnDisabled) {
-  border-color: #0e3f8c;
-  color: #0e3f8c;
+  border-color: #102957;
+  color: #102957;
   background-color: #f8fafc;
 }
 
-/* Right Arrow: Solid Blue Circle (Matching Hero Blue #0e3f8c) */
+/* Right Arrow: Solid Blue Circle (Matching Hero Blue #102957) */
 .nextBtn {
-  background-color: #0e3f8c;
-  border: 1px solid #0e3f8c;
+  background-color: #102957;
+  border: 1px solid #102957;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(14, 63, 140, 0.28);
 }
@@ -146,7 +146,7 @@
 
 .counselorCard:hover {
   transform: translateY(-3px);
-  border-color: #183985;
+  border-color: #102957;
   box-shadow: 0 8px 18px rgba(24, 57, 133, 0.12);
 }
 
@@ -225,7 +225,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  background-color: #183985;
+  background-color: #102957;
   color: #ffffff;
   font-size: 0.8rem;
   font-weight: 700;
@@ -239,10 +239,10 @@
 }
 
 .reachNowBtn:hover {
-  background-color: #e31e24;
-  border-color: #e31e24;
+  background-color: #c52227;
+  border-color: #c52227;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(227, 30, 36, 0.35);
+  box-shadow: 0 4px 12px rgba(197, 34, 39, 0.3);
 }
 
 /* Responsive Styles */

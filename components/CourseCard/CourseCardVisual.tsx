@@ -51,7 +51,7 @@ export default function CourseCardVisual({ type = "bca" }: CourseCardVisualProps
           <rect x="36" y="68" width="14" height="22" rx="3" fill="#93c5fd" />
           <rect x="56" y="52" width="14" height="38" rx="3" fill="#60a5fa" />
           <rect x="76" y="36" width="14" height="54" rx="3" fill="#3b82f6" />
-          <rect x="96" y="20" width="14" height="70" rx="3" fill="#183985" />
+          <rect x="96" y="20" width="14" height="70" rx="3" fill="#102957" />
           
           {/* Upward Trend Arrow */}
           <path d="M42 58L72 32L98 22L124 10" stroke="#3b82f6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
@@ -101,7 +101,7 @@ export default function CourseCardVisual({ type = "bca" }: CourseCardVisualProps
           <rect x="36" y="34" width="8" height="42" rx="2" fill="#93c5fd" />
           <rect x="56" y="34" width="8" height="42" rx="2" fill="#60a5fa" />
           <rect x="76" y="34" width="8" height="42" rx="2" fill="#93c5fd" />
-          <rect x="28" y="76" width="64" height="8" rx="2" fill="#183985" />
+          <rect x="28" y="76" width="64" height="8" rx="2" fill="#102957" />
           
           {/* Quill / Book Stack */}
           <rect x="98" y="60" width="42" height="10" rx="2" fill="#f59e0b" />

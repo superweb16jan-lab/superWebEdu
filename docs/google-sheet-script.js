@@ -42,7 +42,7 @@ function doPost(e) {
       // Style header row: Navy background, White bold text
       var headerRange = sheet.getRange(1, 1, 1, headers.length);
       headerRange.setFontWeight("bold");
-      headerRange.setBackground("#183985");
+      headerRange.setBackground("#102957");
       headerRange.setFontColor("#ffffff");
       headerRange.setHorizontalAlignment("center");
       sheet.setFrozenRows(1);

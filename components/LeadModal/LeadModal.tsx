@@ -33,12 +33,12 @@ export default function LeadModal({
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    if (preselectedCourse) {
-      setFormData((prev) => ({ ...prev, course: preselectedCourse }));
-    }
-    if (preselectedUniversity) {
-      setFormData((prev) => ({ ...prev, university: preselectedUniversity }));
-    }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setFormData((prev) => ({
+      ...prev,
+      ...(preselectedCourse ? { course: preselectedCourse } : {}),
+      ...(preselectedUniversity ? { university: preselectedUniversity } : {})
+    }));
   }, [preselectedCourse, preselectedUniversity]);
 
   useEffect(() => {

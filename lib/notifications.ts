@@ -56,9 +56,10 @@ export async function saveToGoogleSheet(payload: EnquiryPayload): Promise<{ succ
     }
 
     return { success: true };
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const errorMsg = err instanceof Error ? err.message : "Network error while sending to Google Sheet";
     console.error("[Google Sheet Network Error]", err);
-    return { success: false, error: err.message || "Network error while sending to Google Sheet" };
+    return { success: false, error: errorMsg };
   }
 }
 
@@ -112,9 +113,10 @@ export async function sendTelegramNotification(payload: EnquiryPayload): Promise
     }
 
     return { success: true };
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const errorMsg = err instanceof Error ? err.message : "Network error";
     console.error("[Telegram Notification Network Error]", err);
-    return { success: false, error: err.message || "Network error" };
+    return { success: false, error: errorMsg };
   }
 }
 
@@ -157,7 +159,7 @@ export async function sendEmailNotification(payload: EnquiryPayload): Promise<{ 
   <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; padding: 24px 12px; margin: 0;">
     <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #ffffff; border: 1px solid #e2e8f0; border-collapse: collapse; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
       <tr>
-        <td style="background-color: #183985; padding: 20px 24px; text-align: left;">
+        <td style="background-color: #102957; padding: 20px 24px; text-align: left;">
           <h1 style="color: #ffffff; margin: 0; font-size: 20px; font-weight: 800; letter-spacing: -0.5px;">superWebEdu</h1>
           <p style="color: #bfdbfe; margin: 4px 0 0 0; font-size: 13px;">New Student Admission Query Desk</p>
         </td>
@@ -174,18 +176,18 @@ export async function sendEmailNotification(payload: EnquiryPayload): Promise<{ 
             <tr>
               <td style="font-weight: 700; color: #475569; border-bottom: 1px solid #e2e8f0;">Phone Number:</td>
               <td style="font-weight: 600; color: #0f172a; border-bottom: 1px solid #e2e8f0;">
-                <a href="tel:${cleanPhone}" style="color: #183985; text-decoration: none;">${payload.phone}</a>
+                <a href="tel:${cleanPhone}" style="color: #102957; text-decoration: none;">${payload.phone}</a>
               </td>
             </tr>
             <tr style="background-color: #f1f5f9;">
               <td style="font-weight: 700; color: #475569; border-bottom: 1px solid #e2e8f0;">Email Address:</td>
               <td style="color: #0f172a; border-bottom: 1px solid #e2e8f0;">
-                ${payload.email ? `<a href="mailto:${payload.email}" style="color: #183985; text-decoration: none;">${payload.email}</a>` : "Not Provided"}
+                ${payload.email ? `<a href="mailto:${payload.email}" style="color: #102957; text-decoration: none;">${payload.email}</a>` : "Not Provided"}
               </td>
             </tr>
             <tr>
               <td style="font-weight: 700; color: #475569; border-bottom: 1px solid #e2e8f0;">Selected Course:</td>
-              <td style="font-weight: 700; color: #e31e24; border-bottom: 1px solid #e2e8f0;">${payload.course}</td>
+              <td style="font-weight: 700; color: #c52227; border-bottom: 1px solid #e2e8f0;">${payload.course}</td>
             </tr>
             <tr style="background-color: #f1f5f9;">
               <td style="font-weight: 700; color: #475569; border-bottom: 1px solid #e2e8f0;">Preferred University:</td>
@@ -230,9 +232,10 @@ export async function sendEmailNotification(payload: EnquiryPayload): Promise<{ 
     });
 
     return { success: true };
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const errorMsg = err instanceof Error ? err.message : "Failed to send email";
     console.error("[Email Notification Error]", err);
-    return { success: false, error: err.message || "Failed to send email" };
+    return { success: false, error: errorMsg };
   }
 }
 

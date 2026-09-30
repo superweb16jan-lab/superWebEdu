@@ -30,7 +30,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #e31e24;
+  color: #c52227;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
 }
 
 .gradient {
-  color: #183985;
+  color: #102957;
 }
 
 .desc {
@@ -73,7 +73,7 @@
 }
 
 .contactItem:hover {
-  border-color: #183985;
+  border-color: #102957;
   background: #eef2ff;
 }
 
@@ -83,7 +83,7 @@
   border-radius: 50%;
   background: #eef2ff;
   border: 1px solid #c7d2fe;
-  color: #183985;
+  color: #102957;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +120,7 @@
 .formTitle {
   font-size: 1.25rem;
   font-weight: 800;
-  color: #183985;
+  color: #102957;
   margin-bottom: 8px;
 }
 
@@ -165,7 +165,7 @@
 .select:focus,
 .textarea:focus {
   outline: none;
-  border-color: #183985;
+  border-color: #102957;
   box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
 }
 
@@ -180,7 +180,7 @@
 }
 
 .submitBtn {
-  background: #e31e24;
+  background: #c52227;
   color: #ffffff;
   padding: 12px;
   border-radius: var(--radius-md);
@@ -190,12 +190,12 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  box-shadow: 0 4px 12px rgba(227, 30, 36, 0.25);
+  box-shadow: 0 4px 12px rgba(197, 34, 39, 0.25);
   transition: all var(--transition-smooth);
 }
 
 .submitBtn:hover {
-  background: #c7181e;
+  background: #a61a20;
 }
 
 .whatsappAltBtn {

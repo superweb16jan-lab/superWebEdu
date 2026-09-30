@@ -129,7 +129,7 @@ export default function CourseDetailModal({ course, onClose, onOpenEnquiry }: Co
               </div>
               <div className={styles.feeHighlightCard}>
                 <span className={styles.feeCardLabel}>Flexible Payment</span>
-                <span className={styles.feeCardAmount} style={{ color: "#0e3f8c" }}>Zero-Cost EMI</span>
+                <span className={styles.feeCardAmount} style={{ color: "#102957" }}>Zero-Cost EMI</span>
                 <span className={styles.feeCardNote}>Easy monthly installment plans available</span>
               </div>
             </div>

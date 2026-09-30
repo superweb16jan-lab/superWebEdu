@@ -66,7 +66,7 @@ export default function DegreeValidity() {
                   <td className={styles.featureName}>{row.feature}</td>
                   <td className={styles.highlightColumn}>
                     <span className={styles.greenCheck}>
-                      <CheckCircle2 size={16} />
+                      <CheckCircle2 size={16} className={styles.checkIcon} />
                       {row.distance}
                     </span>
                   </td>
@@ -78,7 +78,7 @@ export default function DegreeValidity() {
         </div>
 
         <div className={styles.lawBadge}>
-          <ShieldCheck size={36} style={{ color: "#34d399", flexShrink: 0 }} />
+          <ShieldCheck size={36} style={{ color: "#102957", flexShrink: 0 }} />
           <p className={styles.lawText}>
             <strong>UGC ODL Regulations (Gazette of India):</strong> "Degrees / Diplomas / Certificates awarded for programmes conducted by Open and Distance Learning (ODL) institutions, recognized by the UGC, shall be treated as <strong>equivalent</strong> to corresponding awards of the traditional universities/institutions in the country."
           </p>

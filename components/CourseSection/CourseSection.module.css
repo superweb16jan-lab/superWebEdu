@@ -62,7 +62,7 @@
 .btnSearchPrimary {
   position: absolute;
   right: 4px;
-  background: #183985;
+  background: #102957;
   color: #ffffff;
   border: none;
   font-size: 0.84rem;
@@ -75,7 +75,7 @@
 }
 
 .btnSearchPrimary:hover {
-  background: #183985;
+  background: #102957;
 }
 
 /* Dropdowns Row */
@@ -162,9 +162,9 @@
 }
 
 .categoryPillActive {
-  background: #183985 !important;
+  background: #102957 !important;
   color: #ffffff !important;
-  border-color: #183985 !important;
+  border-color: #102957 !important;
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.22) !important;
 }
 
@@ -248,7 +248,7 @@
 
 .iconPlacement {
   background: #eff6ff;
-  color: #183985;
+  color: #102957;
 }
 
 .featureTextWrap {
@@ -303,7 +303,7 @@
 }
 
 .filteredBadge {
-  color: #183985;
+  color: #102957;
   font-weight: 500;
   font-size: 0.84rem;
   margin-left: 6px;
@@ -387,7 +387,7 @@
 }
 
 .layoutBtnActive {
-  background: #183985;
+  background: #102957;
   color: #ffffff;
   box-shadow: 0 1px 3px rgba(37, 99, 235, 0.25);
 }
@@ -436,7 +436,7 @@
 }
 
 .resetBtn {
-  background: #183985;
+  background: #102957;
   color: #ffffff;
   border: none;
   font-weight: 700;
@@ -448,7 +448,7 @@
 }
 
 .resetBtn:hover {
-  background: #183985;
+  background: #102957;
 }
 
 /* 6. WhatsApp Counselor Help Banner */

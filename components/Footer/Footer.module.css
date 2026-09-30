@@ -160,7 +160,7 @@
   display: block;
   width: 28px;
   height: 3px;
-  background: #e62b32;
+  background: #c52227;
   margin-top: 8px;
   margin-bottom: 20px;
   border-radius: 2px !important;
@@ -198,7 +198,7 @@
 }
 
 .linkItem a:hover .linkChevron {
-  color: #e62b32;
+  color: #c52227;
 }
 
 .viewAllCourses {
@@ -303,7 +303,7 @@
 
 /* Red Counselor Action Button */
 .counselorBtn {
-  background: #e62b32;
+  background: #c52227;
   color: #ffffff;
   border: none;
   border-radius: 8px !important;
@@ -317,16 +317,16 @@
   width: 100%;
   cursor: pointer;
   margin-top: 22px;
-  box-shadow: 0 4px 16px rgba(230, 43, 50, 0.4);
+  box-shadow: 0 4px 16px rgba(197, 34, 39, 0.35);
   transition: all 0.2s ease;
   text-decoration: none;
   box-sizing: border-box;
 }
 
 .counselorBtn:hover {
-  background: #c81e25;
+  background: #a61a20;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(230, 43, 50, 0.5);
+  box-shadow: 0 6px 20px rgba(197, 34, 39, 0.45);
 }
 
 .btnIconLeft {

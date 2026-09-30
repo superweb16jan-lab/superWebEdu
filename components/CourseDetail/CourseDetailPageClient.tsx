@@ -268,7 +268,7 @@ export default function CourseDetailPageClient({ course, relatedCourses }: Cours
                       <stop offset="1" stopColor="#dbeafe" stopOpacity="0.95" />
                     </linearGradient>
                     <linearGradient id="courseRingGrad" x1="65" y1="105" x2="355" y2="435" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#e62b32" />
+                      <stop stopColor="#c52227" />
                       <stop offset="1" stopColor="#102957" />
                     </linearGradient>
                   </defs>
@@ -628,7 +628,7 @@ export default function CourseDetailPageClient({ course, relatedCourses }: Cours
                 <div className={styles.careersBody}>
                   <div className={styles.salaryIndicatorRow}>
                     <div className={styles.salaryStat}>
-                      <TrendingUp size={24} style={{ color: "#e62b32" }} />
+                      <TrendingUp size={24} style={{ color: "#c52227" }} />
                       <div>
                         <span className={styles.salaryStatLabel}>Estimated Starting Package</span>
                         <strong className={styles.salaryStatVal}>₹3.5 LPA – ₹9.5 LPA</strong>

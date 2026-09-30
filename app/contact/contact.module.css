@@ -9,7 +9,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #183985;
+  color: #102957;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
 }
 
 .gradient {
-  color: #183985;
+  color: #102957;
 }
 
 .heroDesc {
@@ -55,7 +55,7 @@
 
 .infoCard:hover {
   background: #f8fafc;
-  border-color: #183985;
+  border-color: #102957;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(29, 78, 216, 0.08);
 }
@@ -66,7 +66,7 @@
   border-radius: 50%;
   background: #eff6ff;
   border: 1px solid #bfdbfe;
-  color: #183985;
+  color: #102957;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -42,14 +42,14 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #e62b32;
+  color: #c52227;
   background: #fef2f2;
   border: 1px solid #fee2e2;
   padding: 4px 12px;
   border-radius: 9999px;
   width: fit-content;
   margin-bottom: 14px;
-  box-shadow: 0 1px 4px rgba(230, 43, 50, 0.08);
+  box-shadow: 0 1px 4px rgba(197, 34, 39, 0.08);
 }
 
 .heroTitle {
@@ -62,7 +62,7 @@
 }
 
 .heroTitleHighlight {
-  color: #e62b32;
+  color: #c52227;
   /* SuperWeb Red Accent */
 }
 
@@ -87,7 +87,7 @@
 }
 
 .heroBtnExplore {
-  background: #e62b32;
+  background: #c52227;
   /* SuperWeb Red */
   color: #ffffff;
   font-weight: 700;
@@ -99,15 +99,15 @@
   gap: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 14px rgba(230, 43, 50, 0.35);
+  box-shadow: 0 4px 14px rgba(197, 34, 39, 0.3);
   border: none;
   text-decoration: none;
 }
 
 .heroBtnExplore:hover {
-  background: #c81e25;
+  background: #a61a20;
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(230, 43, 50, 0.45);
+  box-shadow: 0 6px 18px rgba(197, 34, 39, 0.38);
 }
 
 .heroLinkCounselor {
@@ -123,7 +123,7 @@
 }
 
 .heroLinkCounselor:hover {
-  color: #e62b32;
+  color: #c52227;
 }
 
 .heroWaIcon {

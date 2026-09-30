@@ -90,9 +90,9 @@
 }
 
 .nextBtn:hover:not(.navBtnDisabled) {
-  background-color: #e62b32;
-  border-color: #e62b32;
-  box-shadow: 0 6px 16px rgba(230, 43, 50, 0.35);
+  background-color: #c52227;
+  border-color: #c52227;
+  box-shadow: 0 6px 16px rgba(197, 34, 39, 0.3);
   transform: translateY(-1px);
 }
 
@@ -134,7 +134,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: #0e3f8c; /* Exact solid navy from mockup */
+  background-color: #102957; /* Exact solid navy from mockup */
   color: #ffffff;
   font-size: 0.96rem;
   font-weight: 700;
@@ -204,7 +204,7 @@
   }
 
   .mobileViewAllLink:hover {
-    color: #e62b32;
+    color: #c52227;
     transform: translateX(2px);
   }
 

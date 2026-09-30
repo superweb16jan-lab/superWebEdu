@@ -6,9 +6,9 @@
   --primary-navy: #102957;
   --secondary-navy: #1b365d;
   --navy-light: #2a4b7c;
-  --primary-red: #e62b32;
-  --accent-orange: #e62b32;
-  --orange-hover: #c81e25;
+  --primary-red: #c52227;
+  --accent-orange: #c52227;
+  --orange-hover: #a61a20;
   --orange-light: #fef2f2;
   --white: #ffffff;
   --light-bg: #f5f8fc;
@@ -26,13 +26,13 @@
 
   --color-superweb-navy: #102957;
   --color-superweb-navy-dark: #082258;
-  --color-superweb-red: #e62b32;
-  --color-superweb-red-dark: #c81e25;
+  --color-superweb-red: #c52227;
+  --color-superweb-red-dark: #a61a20;
   --color-superweb-red-light: #fef2f2;
   --color-superweb-red-border: #fecaca;
 
-  --color-accent-red: #e62b32;
-  --color-accent-red-hover: #c81e25;
+  --color-accent-red: #c52227;
+  --color-accent-red-hover: #a61a20;
   --color-accent-red-bg: #fef2f2;
   --color-accent-red-border: #fecaca;
 

@@ -28,7 +28,7 @@ export default function Testimonials() {
                     <Star key={i} size={16} fill="#fbbf24" stroke="none" />
                   ))}
                 </div>
-                <p className={styles.quoteText}>"{t.text}"</p>
+                <p className={styles.quoteText}>&ldquo;{t.text}&rdquo;</p>
               </div>
 
               <div className={styles.userRow}>

@@ -153,7 +153,7 @@ export default function EnquirySection({ defaultCourse, defaultUniversity }: Enq
                   <p style={{ color: "var(--text-secondary)", fontSize: "0.9rem" }}>
                     Thank you <strong>{formData.name}</strong>. Our counselor has received your details for <strong>{formData.course} ({formData.university})</strong>.
                   </p>
-                  <p style={{ color: "#183985", fontSize: "0.85rem", fontWeight: 600 }}>
+                  <p style={{ color: "#102957", fontSize: "0.85rem", fontWeight: 600 }}>
                     Connecting to our dedicated WhatsApp helpline...
                   </p>
                   <a
@@ -168,7 +168,7 @@ export default function EnquirySection({ defaultCourse, defaultUniversity }: Enq
                   </a>
                   <button
                     onClick={() => setSubmitted(false)}
-                    style={{ color: "#183985", fontSize: "0.85rem", textDecoration: "underline", marginTop: "8px", background: "none", border: "none", cursor: "pointer" }}
+                    style={{ color: "#102957", fontSize: "0.85rem", textDecoration: "underline", marginTop: "8px", background: "none", border: "none", cursor: "pointer" }}
                   >
                     Submit another response
                   </button>
