@@ -44,7 +44,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #059669;
+  background-color: #047857;
 }
 
 .hours {
@@ -92,7 +92,7 @@
 }
 
 .whatsappPill:hover {
-  background: #16a34a;
+  background: #14532d;
 }
 
 .mobileWhatsappText {

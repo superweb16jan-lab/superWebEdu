@@ -48,9 +48,9 @@ export default function ContactPage() {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.infoCard}
-              style={{ borderColor: "rgba(37, 211, 102, 0.4)" }}
+              style={{ borderColor: "rgba(21, 128, 61, 0.4)" }}
             >
-              <div className={styles.iconCircle} style={{ background: "rgba(37, 211, 102, 0.2)", borderColor: "#25d366", color: "#25d366" }}>
+              <div className={styles.iconCircle} style={{ background: "rgba(21, 128, 61, 0.2)", borderColor: "#15803d", color: "#15803d" }}>
                 <MessageSquareQuote size={24} />
               </div>
               <div className={styles.infoContent}>

@@ -228,12 +228,12 @@
 
 .iconSalary {
   background: #dcfce7;
-  color: #16a34a;
+  color: #15803d;
 }
 
 .iconFee {
   background: #ecfdf5;
-  color: #059669;
+  color: #047857;
 }
 
 .rupeeIcon {
@@ -480,7 +480,7 @@
   border-radius: 50%;
   background: #dcfce7;
   border: 1px solid #86efac;
-  color: #16a34a;
+  color: #15803d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,19 +503,19 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #25d366;
+  background: #15803d;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 9999px;
   font-weight: 700;
   font-size: 0.9rem;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.25);
   transition: all 0.2s ease;
   text-decoration: none;
 }
 
 .helpBtn:hover {
-  background: #16a34a;
+  background: #14532d;
   color: #ffffff;
 }
 

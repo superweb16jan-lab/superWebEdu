@@ -101,7 +101,7 @@
 }
 
 .trustIconGreen {
-  color: #10b981;
+  color: #047857;
   flex-shrink: 0;
 }
 
@@ -251,7 +251,7 @@
 }
 
 .iconGreen {
-  color: #25d366;
+  color: #15803d;
 }
 
 .contactContent {
@@ -275,7 +275,7 @@
 }
 
 .contactTitleGreen {
-  color: #25d366;
+  color: #15803d;
   font-weight: 700;
   font-size: 1.05rem; /* >= 16px desktop */
   text-decoration: none;

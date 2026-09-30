@@ -85,7 +85,7 @@ export default function CourseCardVisual({ type = "bca" }: CourseCardVisualProps
           <circle cx="118" cy="52" r="17" fill="#facc15" />
           <text x="118" y="58" fontSize="16" fontWeight="bold" textAnchor="middle" fill="#854d0e">₹</text>
           {/* Mini Growth Curve */}
-          <path d="M34 72C50 68 70 56 94 40" stroke="#22c55e" strokeWidth="3" strokeLinecap="round" />
+          <path d="M34 72C50 68 70 56 94 40" stroke="#15803d" strokeWidth="3" strokeLinecap="round" />
         </svg>
       </div>
     );

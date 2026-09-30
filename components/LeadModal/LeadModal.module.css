@@ -149,7 +149,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: #25d366;
+  background: #15803d;
   color: #ffffff;
   padding: 11px;
   border-radius: var(--radius-md);
@@ -159,7 +159,7 @@
 }
 
 .whatsappAltBtn:hover {
-  background: #16a34a;
+  background: #14532d;
 }
 
 .successState {

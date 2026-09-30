@@ -753,19 +753,19 @@ export default function CourseDetailPageClient({ course, relatedCourses }: Cours
 
                   <div className={styles.validityPillars}>
                     <div className={styles.pillarItem}>
-                      <CheckCircle2 size={18} style={{ color: "#059669" }} />
+                      <CheckCircle2 size={18} style={{ color: "#047857" }} />
                       <span><strong>UPSC &amp; State PSCs:</strong> 100% eligible for Civil Services, State PCS &amp; Defense exams.</span>
                     </div>
                     <div className={styles.pillarItem}>
-                      <CheckCircle2 size={18} style={{ color: "#059669" }} />
+                      <CheckCircle2 size={18} style={{ color: "#047857" }} />
                       <span><strong>Banking &amp; PSUs:</strong> Eligible for SBI PO, IBPS, SSC-CGL, Railways, and Public Sector Units.</span>
                     </div>
                     <div className={styles.pillarItem}>
-                      <CheckCircle2 size={18} style={{ color: "#059669" }} />
+                      <CheckCircle2 size={18} style={{ color: "#047857" }} />
                       <span><strong>Higher Studies:</strong> Valid for direct admission to Master's (MBA, MCA, M.Tech) and Ph.D doctoral programs.</span>
                     </div>
                     <div className={styles.pillarItem}>
-                      <CheckCircle2 size={18} style={{ color: "#059669" }} />
+                      <CheckCircle2 size={18} style={{ color: "#047857" }} />
                       <span><strong>Global WES Verification:</strong> Recognized for international work visas, Canada PR, and USA higher education evaluations.</span>
                     </div>
                   </div>

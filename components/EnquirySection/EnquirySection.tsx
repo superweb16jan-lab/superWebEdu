@@ -119,7 +119,7 @@ export default function EnquirySection({ defaultCourse, defaultUniversity }: Enq
                   rel="noopener noreferrer"
                   className={styles.contactItem}
                 >
-                  <div className={styles.contactIcon} style={{ background: "rgba(37, 211, 102, 0.2)", borderColor: "#25d366", color: "#25d366" }}>
+                  <div className={styles.contactIcon} style={{ background: "rgba(21, 128, 61, 0.2)", borderColor: "#15803d", color: "#15803d" }}>
                     <MessageSquareQuote size={20} />
                   </div>
                   <div className={styles.contactText}>

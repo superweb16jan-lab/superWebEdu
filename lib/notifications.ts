@@ -208,7 +208,7 @@ export async function sendEmailNotification(payload: EnquiryPayload): Promise<{ 
           </table>
 
           <div style="margin-top: 24px; text-align: center;">
-            <a href="${waLink}" style="display: inline-block; background-color: #25d366; color: #ffffff; text-decoration: none; padding: 12px 24px; font-weight: 700; font-size: 14px;">Chat with Student on WhatsApp</a>
+            <a href="${waLink}" style="display: inline-block; background-color: #15803d; color: #ffffff; text-decoration: none; padding: 12px 24px; font-weight: 700; font-size: 14px;">Chat with Student on WhatsApp</a>
           </div>
         </td>
       </tr>

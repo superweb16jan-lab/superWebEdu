@@ -230,7 +230,7 @@
 }
 
 .heroWaIcon {
-  color: #25d366;
+  color: #15803d;
   flex-shrink: 0;
 }
 
@@ -339,7 +339,7 @@
 }
 
 .feeHighlightText {
-  color: #059669;
+  color: #047857;
   font-weight: 700;
 }
 
@@ -535,7 +535,7 @@
   width: 20px;
   height: 20px;
   background-color: #ecfdf5;
-  color: #059669;
+  color: #047857;
   border: 1px solid #a7f3d0;
   display: flex;
   align-items: center;
@@ -800,7 +800,7 @@
 }
 
 .greenAmount {
-  color: #059669;
+  color: #047857;
 }
 
 .feeBoxNote {
@@ -840,7 +840,7 @@
 }
 
 .guaranteeIcon {
-  color: #059669;
+  color: #047857;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -1142,7 +1142,7 @@
 
 .fallbackUniItem span {
   font-size: 0.78rem;
-  color: #059669;
+  color: #047857;
   font-weight: 600;
 }
 
@@ -1462,7 +1462,7 @@
 .successIcon {
   width: 48px;
   height: 48px;
-  background-color: #059669;
+  background-color: #047857;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -1482,7 +1482,7 @@
 }
 
 .btnWhatsappSuccess {
-  background-color: #25d366;
+  background-color: #15803d;
   color: #ffffff;
   text-decoration: none;
   font-size: 0.85rem;
@@ -1538,7 +1538,7 @@
 }
 
 .counselorBtnWa {
-  background-color: #25d366;
+  background-color: #15803d;
   color: #ffffff;
   text-decoration: none;
   font-size: 0.8rem;
@@ -1553,7 +1553,7 @@
 }
 
 .counselorBtnWa:hover {
-  background-color: #16a34a;
+  background-color: #14532d;
 }
 
 /* 6. Sticky Mobile Bottom Action Bar */
@@ -1933,12 +1933,12 @@
   .mobileFeeVal {
     font-size: 0.94rem;
     font-weight: 800;
-    color: #059669;
+    color: #047857;
     white-space: nowrap;
   }
 
   .btnMobileWa {
-    background-color: #25d366;
+    background-color: #15803d;
     color: #ffffff;
     border: none;
     text-decoration: none;

@@ -100,7 +100,7 @@
 }
 
 .featureItem svg {
-  color: #059669;
+  color: #047857;
   flex-shrink: 0;
   margin-top: 3px;
 }
@@ -171,18 +171,18 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  background: #25d366;
+  background: #15803d;
   color: #ffffff;
   font-size: 0.86rem;
   font-weight: 700;
   padding: 10px 14px;
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
-  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.25);
+  box-shadow: 0 2px 8px rgba(21, 128, 61, 0.25);
 }
 
 .btnWhatsapp:hover {
-  background: #16a34a;
+  background: #14532d;
 }
 
 @media (max-width: 480px) {

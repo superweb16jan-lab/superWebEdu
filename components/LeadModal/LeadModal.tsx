@@ -114,7 +114,7 @@ export default function LeadModal({
 
         {submitted ? (
           <div className={styles.successState}>
-            <div style={{ width: "54px", height: "54px", borderRadius: "50%", background: "rgba(16, 185, 129, 0.2)", border: "2px solid #10b981", color: "#10b981", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ width: "54px", height: "54px", borderRadius: "50%", background: "rgba(4, 120, 87, 0.2)", border: "2px solid #047857", color: "#047857", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <CheckCircle size={32} />
             </div>
             <h3 style={{ fontSize: "1.3rem", fontWeight: 800, color: "#ffffff" }}>
