@@ -10,7 +10,6 @@ export default function TopBar() {
       <div className={styles.inner}>
         <div className={styles.leftGroup}>
           <span className={styles.badge}>
-            <span className={styles.badgeDot}></span>
             <ShieldCheck size={14} />
             UGC-DEB & AICTE Approved Admissions Open 2025-26
           </span>
